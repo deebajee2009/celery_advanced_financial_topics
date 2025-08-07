@@ -120,6 +120,8 @@ result = process_loan_application(12345)
 
 5- **security considerations for Celery in banking**
 ```
+import ssl
+
 # Message Encryption
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_ACCEPT_CONTENT = ['json']
